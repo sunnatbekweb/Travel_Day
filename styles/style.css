@@ -1,0 +1,433 @@
+*::after,
+*::before * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Kanit' sans-serif;
+}
+
+h1,
+h2,
+h3,
+h5,
+h6,
+h4 {
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+ul,
+li,
+a {
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header {
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nav .list {
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.nav .list .item:nth-child(5) {
+    margin-left: 40px;
+}
+
+.nav .logo {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 18px;
+    color: #FA793C;
+}
+
+.nav .list .link {
+    font-size: 16px;
+    color: #000;
+}
+
+.intro {
+    display: flex;
+    align-items: center;
+    min-height: 550px;
+    background-image: url(/assets/images/intro-bg-img.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: bottom center;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 130px;
+}
+
+.intro .wrapper .left {
+    min-width: 576px;
+}
+
+.intro .wrapper h1 {
+    color: #fff;
+    font-size: 50px;
+    font-weight: 400;
+}
+
+.intro .wrapper .left p {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 21px;
+}
+
+.left-title,
+.left-p,
+.intro-btns {
+    margin-left: 32px;
+}
+
+.intro .wrapper .left h2 {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 60px;
+    color: #FFFFFF;
+    margin-top: 24px;
+}
+
+.intro-btns {
+    display: block;
+    align-items: center;
+    justify-content: center;
+    gap: 32px;
+    margin-top: 11px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.intro-btns input {
+    display: flex;
+    align-items: center;
+    width: 348px;
+    height: 50px;
+    border: 3px solid #FFFFFF;
+    border-radius: 30px;
+    background-color: transparent;
+    padding-left: 32px;
+}
+
+.intro-btns input::placeholder {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.intro-btns button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 164px;
+    height: 60px;
+    background: #FA793C;
+    border: 3px solid #FFFFFF;
+    border-radius: 30px;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.right {
+    min-width: 440px;
+    height: fit-content;
+    padding: 32px;
+    background-color: #fff;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right-btns {
+    margin-right: 60px;
+}
+
+.card-header h2 {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.card hr {
+    margin-bottom: 17px;
+    margin-right: 40px;
+}
+
+.card h3 {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #FA793C;
+}
+
+.discovery h1 {
+    margin: 34px 0;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+}
+
+.card p {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+}
+
+.discovery-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discovery-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 380px;
+    height: auto;
+    border: 1px solid #000000;
+}
+
+.discovery-card img {
+    margin-bottom: 16px
+}
+
+.discovery-card p span {
+    font-family: 'Kanit';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    color: #000;
+}
+
+.discovery-card p {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: 0 20px;
+}
+
+.time,
+.time img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px;
+    margin-left: 8px;
+}
+
+.photograph-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 71px;
+}
+
+.photo-left-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 779px;
+    height: 400px;
+    background-image: url(/assets/images/photo_large1.png);
+    background-repeat: no-repeat;
+    margin-bottom: 86px;
+}
+
+.photograph h1 {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #000000;
+    margin: 52px 0;
+}
+
+.photo-left-card h1 {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFFFFF;
+    margin-left: 36px;
+}
+
+.photo-left-card p {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 36px;
+    margin-top: 0;
+}
+
+.photo-left-card1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    width: 779px;
+    height: 400px;
+    background-image: url(/assets/images/photo_large2.png);
+    background-repeat: no-repeat;
+}
+
+.photo-left-card1 h1 {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 45px;
+    color: #FFFFFF;
+    margin-left: 36px;
+}
+
+.photo-left-card1 p {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 36px;
+    margin-top: 0;
+}
+
+.right-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 49px;
+}
+
+.right-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 380px;
+    height: auto;
+    border: 1px solid #000000;
+}
+
+.right-card p span {
+    font-family: 'Kanit';
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 500;
+    color: #000;
+}
+
+.right-card p {
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin: 0;
+    margin-top: 18px;
+}
+
+.time1 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 15px;
+    gap: 13px;
+}
+
+.time-p {
+    margin: 0 !important;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1440px;
+    height: 100px;
+    background: #000000;
+}
+
+.footer-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo p {
+    font-family: 'Pridi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
